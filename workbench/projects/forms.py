@@ -426,6 +426,7 @@ class ServiceForm(ModelForm):
             "effort_rate",
             "cost",
             "third_party_costs",
+            "is_hidden",
         ]
         widgets = {"description": Textarea()}
 

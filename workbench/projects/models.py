@@ -742,6 +742,11 @@ class Service(ServiceBase):
         default=False,
         help_text=_("Optional services do not count towards the offer total."),
     )
+    is_hidden = models.BooleanField(
+        _("is hidden"),
+        default=False,
+        help_text=_("Hide services in the search"),
+    )
 
     objects = ServiceQuerySet.as_manager()
 
